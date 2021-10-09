@@ -7,7 +7,7 @@ class Main {
     constructor() {
     }
 }
-const classMain = Main()
+const classMain = new Main()
 console.log(classMain)
 
 const asynchronous = async arg => {
