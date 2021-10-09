@@ -1,0 +1,10 @@
+# サポートするブラウザを指定
+
+> 0.25%
+not dead
+# package.jsonかこのファイルのどちらかに書く（両方はだめ）
+
+# "defaults",
+# "not IE 11",
+# "not IE_Mob 11",
+# "maintained node versions"
