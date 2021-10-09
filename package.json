@@ -1,12 +1,13 @@
 {
+  "dependencies": {
+    "core-js": "3",
+    "regenerator-runtime": "^0.13.9"
+  },
   "devDependencies": {
     "@babel/cli": "^7.15.7",
     "@babel/core": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
-    "babel-polyfill": "^6.26.0"
-  },
-  "dependencies": {
-    "core-js": "3",
-    "regenerator-runtime": "^0.13.9"
+    "babel-polyfill": "^6.26.0",
+    "eslint": "^7.32.0"
   }
 }
