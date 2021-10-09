@@ -6,3 +6,9 @@ class Main {
     constructor() {
     }
 }
+
+// pollyfillが必要な変数（async await部分）
+const unsychronous = async arg => {
+    return await arg;
+};
+console.log(unsychronous("hey"));
