@@ -1,8 +1,8 @@
+// コードフォーマッタ prettier の設定
+
 module.exports = {
-    // 適当に設定していて、ESLintと衝突する状態である
-    // TODO: ESLintと共存させるように更新するべし
     trailingComma: "es5",
-    tabWidth: 4,
+    tabWidth: 2,
     semi: false,
     singleQuote: true
 };

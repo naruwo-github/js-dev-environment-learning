@@ -1,17 +1,16 @@
 const main = () => {
-    console.log('ES6の書式だよ。アロー関数使ってるよ。')
+  console.log('ES6の書式だよ。アロー関数使ってるよ。')
 }
-main();
+main()
 
 class Main {
-    constructor() {
-    }
+  constructor() {}
 }
 const classMain = new Main()
 console.log(classMain)
 
-const asynchronous = async arg => {
-    // pollyfillが必要な変数（async await部分）
-    return await arg;
-};
-console.log(asynchronous("hey"));
+const asynchronous = async (arg) => {
+  // pollyfillが必要な変数（async await部分）
+  return await arg
+}
+console.log(asynchronous('hey'))

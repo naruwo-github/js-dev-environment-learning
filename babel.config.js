@@ -1,3 +1,5 @@
+// コンパイラ Babel の設定
+
 module.exports = {
     "presets": [
         [
