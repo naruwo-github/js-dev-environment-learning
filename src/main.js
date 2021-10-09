@@ -10,8 +10,8 @@ class Main {
 const classMain = Main()
 console.log(classMain)
 
-const unsychronous = async arg => {
+const asynchronous = async arg => {
     // pollyfillが必要な変数（async await部分）
     return await arg;
 };
-console.log(unsychronous("hey"));
+console.log(asynchronous("hey"));
