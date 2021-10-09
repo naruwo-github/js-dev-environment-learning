@@ -7,8 +7,9 @@ module.exports = {
     },
     "extends": [
         // ESLintのルールは後勝ちするため、後に設定したものが優先される
-        "eslint:recommended",
-        "prettier",
+        // "eslint:recommended",
+        // "prettier",
+        "airbnb-base",
         "plugin:prettier/recommended"
     ],
     "parserOptions": {
@@ -17,5 +18,6 @@ module.exports = {
     },
     "plugins": ["prettier"],
     "rules": {
-    }
+        "prettier/prettier": "error"
+    },
 };
