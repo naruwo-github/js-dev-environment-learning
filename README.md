@@ -55,3 +55,8 @@ JavaScriptの開発環境構築のキャッチアップ用プロジェクト
 - ここで学ぶ内容: tsc, tsconfig, ESLintをTS用に設定, PrettierをTS用に設定, WebpackをTS用に設定, JestをTS用に設定
 - tsc: TypeScriptのコンパイラ。```yarn tsc xxx.ts --outDir dist```とすると、xxx.tsをxxx.jsに変換してdist/に出力できる。
 - tsconfig.json: コンパイル時の詳細設定ファイル。```yarn tsc --init```で作成可能。
+- ESLintの設定にTypeScript用の設定を組み込む
+  - ```.eslintrc.js```に設定を追記するが、yarnで@typeScript-eslint/eslint-pluginモジュールをプロジェクトに追加したのち、あれこれとプラグインの設定（extendsの中に色々書く）をする。
+    - plugin:@typescript-eslint/recommendedは方を必要としない基本設定を詰め込んだもの。
+    - plugin:@typescript-eslint/eslint-recommendedはTypeScriptでチェックされる項目を除外する設定。
+    - @typeScript-eslint/parserは、TypeScriptのコードをリントするために必要。

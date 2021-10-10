@@ -3,5 +3,5 @@ const { foo, bar, ...piyo } = {
   bar: 2,
   x: 3,
   y: 4,
-  z: 5
+  z: 5,
 }
