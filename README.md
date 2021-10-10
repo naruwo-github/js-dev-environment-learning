@@ -46,4 +46,5 @@ JavaScriptの開発環境構築のキャッチアップ用プロジェクト
   - ```yarn add -D webpack webpack-cli```の後、webpackコマンドが使えるようになる。
 
 ### Jest
-- ...
+- JSのテストランナー。```yarn add -D jest```で導入。
+- デフォルトでは```xxx.test.js```というファイル名内がテスト対象となる。
