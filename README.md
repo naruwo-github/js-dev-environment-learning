@@ -48,3 +48,10 @@ JavaScriptの開発環境構築のキャッチアップ用プロジェクト
 ### Jest
 - JSのテストランナー。```yarn add -D jest```で導入。
 - デフォルトでは```xxx.test.js```というファイル名内がテスト対象となる。
+
+### TypeScript
+- JavaScriptのコードで型定義ができるようになる拡張機能のこと。これ自体を言語と捉える場合もある。
+- 実行する際にはJavaScriptに変換される。安全性や補完の恩恵を得られるメリットをJSに添加したものですね。
+- ここで学ぶ内容: tsc, tsconfig, ESLintをTS用に設定, PrettierをTS用に設定, WebpackをTS用に設定, JestをTS用に設定
+- tsc: TypeScriptのコンパイラ。```yarn tsc xxx.ts --outDir dist```とすると、xxx.tsをxxx.jsに変換してdist/に出力できる。
+- tsconfig.json: コンパイル時の詳細設定ファイル。```yarn tsc --init```で作成可能。
