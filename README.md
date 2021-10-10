@@ -31,11 +31,16 @@ JavaScriptの開発環境構築のキャッチアップ用プロジェクト
 ### Webpack
 - モジュールバンドラ。複数のjsを含むassetファイルの依存関係の解決を行うもの。
   - 依存を持つjsファイルのentry pointを受け取り、その依存を解決したファイルを成果物としてoutputする。（この使い方が一般的だが、他の使い方もある。）
+  - 設定は```webpack.config.js```に書く
 - リンカとも言えるが、ただのリンカではなく複雑であり、loaderやserveという仕組みを用いていろいろなことができる。その一例を次に示す。
   - Babelを呼び出す
+    - babel-loaderをインストールし、webpack.config.js内に設定を記述する必要がある
   - TypeScriptのコンパイラを呼び出す
+    - ...
   - 開発用サーバを立てる
+    - ...
   - HTMLにバンドルしたJavaScriptファイルを埋め込める
+    - html-webpack-pluginをインストールし、webpack.config.js内に設定を記述する必要がある
   - 他にも色々...
 - webpackとcliツールを導入する
   - ```yarn add -D webpack webpack-cli```の後、webpackコマンドが使えるようになる。
