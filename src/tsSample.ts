@@ -1,4 +1,4 @@
-const { foo, bar, ...piyo } = {
+export const { foo, bar, ...piyo } = {
   foo: 1,
   bar: 2,
   x: 3,
