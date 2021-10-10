@@ -21,5 +21,18 @@ module.exports = {
   plugins: ['prettier', '@typescript-eslint'],
   rules: {
     'prettier/prettier': 'error',
+
+    // 下記は、TypeScript対応で導入したプラグイン@typescript-eslint/eslint-pluginとのルールの競合を抑えるためのルール設定。
+    '@typescript-eslint/quotes': 0,
+    '@typescript-eslint/brace-style': 'off',
+    '@typescript-eslint/comma-spacing': 'off',
+    '@typescript-eslint/func-call-spacing': 'off',
+    '@typescript-eslint/indent': 'off',
+    '@typescript-eslint/member-delimiter-style': 'off',
+    '@typescript-eslint/no-extra-parens': 'off',
+    '@typescript-eslint/no-extra-semi': 'off',
+    '@typescript-eslint/semi': 'off',
+    '@typescript-eslint/space-before-function-paren': 'off',
+    '@typescript-eslint/type-annotation-spacing': 'off',
   },
 }

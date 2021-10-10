@@ -2,7 +2,8 @@
   "name": "js-dev-environment-learning",
   "license": "MIT",
   "scripts": {
-    "format": "prettier --write './src/**/*.{js,ts,tsx}'"
+    "format": "prettier --write './src/**/*.{js,ts,tsx}'",
+    "test": "jest"
   },
   "dependencies": {
     "core-js": "3",
@@ -12,6 +13,7 @@
     "@babel/cli": "^7.15.7",
     "@babel/core": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
+    "@types/jest": "^27.0.2",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.33.0",
     "babel-loader": "^8.2.2",
@@ -25,6 +27,8 @@
     "html-webpack-plugin": "^5.3.2",
     "jest": "^27.2.5",
     "prettier": "^2.4.1",
+    "ts-jest": "^27.0.5",
+    "ts-loader": "^9.2.6",
     "typescript": "^4.4.3",
     "webpack": "^5.58.1",
     "webpack-cli": "^4.9.0"

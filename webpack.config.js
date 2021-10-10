@@ -16,6 +16,7 @@ module.exports = {
   },
   module: {
     rules: [
+      // JavaScriptをコンパイルする設定
       {
         test: /\.m?js$/,
         exclude: /(node_modules|bower_components)/,
@@ -26,9 +27,17 @@ module.exports = {
           },
         },
       },
+      // HTMLファイルにバンドルしたJavaScriptファイルを埋め込む設定
       {
         test: /\.html$/,
         loader: 'html-loader',
+      },
+      // TypeScriptをJavaScriptに変換する設定
+      {
+        test: /\.(ts|tsx)$/,
+        use: {
+          loader: 'ts-loader',
+        },
       },
     ],
   },
