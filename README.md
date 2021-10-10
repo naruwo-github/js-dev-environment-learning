@@ -68,3 +68,6 @@ JavaScriptの開発環境構築のキャッチアップ用プロジェクト
   - ```yarn add -D @types/jest ts-jest```で必要なモジュールを導入。
   - @types/jest: Jest用の型定義ファイル。これがないとテストコードをTSで書いた時にエディタ上で警告が出る（実行はできる）。
   - ts-jest: JestのTypeScriptプリプロセッサ。
+  - Reactを使う。
+    - tscでreactのjsx, tsxをコンパイルする。
+    - コマンド例: ```yarn tsc src/xxx.tsx --jsx react```
